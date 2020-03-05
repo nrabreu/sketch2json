@@ -1,26 +1,26 @@
 {
-  "name": "sketch2json",
-  "version": "0.1.2",
-  "description": "Get a JSON output out of a buffer of Sketch v43+ data (works both in Node and in the browser)",
+  "name": "@cmp-dev/sketch2json",
+  "version": "0.1.3",
+  "description": "Get a JSON output out of a buffer of Sketch v43+ data (works both in Node and in the browser); adding image support. A scoped fork of sketch2json.",
   "main": "sketch2json.js",
   "scripts": {
     "test": "washington tests"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xaviervia/sketch2json.git"
+    "url": "git+https://github.com/nrabreu/sketch2json.git"
   },
   "keywords": [
     "sketch",
     "json",
     "design"
   ],
-  "author": "Fernando Via Canel <fernando.via@gmail.com>",
+  "author": "Nestor R. Abreu <nestor.abreu@craftsmanplus.com>",
   "license": "Unlicense",
   "bugs": {
-    "url": "https://github.com/xaviervia/sketch2json/issues"
+    "url": "https://github.com/nrabreu/sketch2json/issues"
   },
-  "homepage": "https://github.com/xaviervia/sketch2json#readme",
+  "homepage": "https://github.com/nrabreu/sketch2json#readme",
   "devDependencies": {
     "washington": "^2.0.0-rc.3"
   },
@@ -29,5 +29,8 @@
     "immutable": "^3.8.1",
     "immutable-ext": "^1.0.8",
     "jszip": "^3.1.3"
+  },
+  "directories": {
+    "test": "tests"
   }
 }

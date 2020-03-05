@@ -1,19 +1,16 @@
 # sketch2json
 
-[![https://travis-ci.org/xaviervia/sketch2json.svg?branch=master](https://travis-ci.org/xaviervia/sketch2json.svg?branch=master)](https://travis-ci.org/xaviervia/sketch2json/builds) [![npm version](https://img.shields.io/npm/v/sketch2json.svg?maxAge=1000)](https://www.npmjs.com/package/sketch2json)
+[![npm version](https://img.shields.io/npm/v/@cmp-dev/sketch2json.svg?maxAge=1000)](https://www.npmjs.com/package/@cmp-dev/sketch2json)
 
 Get a JSON output out of a buffer of Sketch v43+ data (works both in Node and in the browser)
 
 Combined with the stylish [React JSON Tree](https://github.com/alexkuz/react-json-tree), you can inspect the Sketch file contents easily:
 
-[![https://xaviervia.github.io/sketch2json](demo.gif)](https://xaviervia.github.io/sketch2json)
-> Check out the live demo in [https://xaviervia.github.io/sketch2json](https://xaviervia.github.io/sketch2json)
-
 You can also run this from the command like with the [sketchy](https://github.com/kristianmandrup/sketchy) package.
 ## Installation
 
 ```
-npm install --save sketch2json
+npm install --save @cmp-dev/sketch2json
 ```
 
 ## Usage
@@ -22,7 +19,7 @@ In Node, you can read a Sketch file from the file system and pass it to `sketch2
 
 ```javascript
 const fs = require('fs')
-const sketch2json = require('sketch2json')
+const sketch2json = require('@cmp-dev/sketch2json')
 
 fs.readFile(__dirname + '/simple.sketch', (error, data) => {
   sketch2json(data).then(result => console.log(result))
